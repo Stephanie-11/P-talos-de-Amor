@@ -1,0 +1,141 @@
+﻿/* Reset básico */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente y colores básicos */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #f8b400;
+    color: #fff;
+    padding: 1em 0;
+}
+
+    header .container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+    nav ul li {
+        margin-left: 1em;
+    }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+
+#banner {
+    text-align: center;
+    padding: 2em 0;
+    background: #fff;
+}
+
+    #banner h2 {
+        margin-bottom: 0.5em;
+        font-size: 2rem;
+        color: #333;
+    }
+
+    #banner p {
+        font-size: 1.2rem;
+        color: #666;
+    }
+
+    #banner img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em 0;
+    background: #fff;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 22%;
+    margin-bottom: 2em;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin: 0.5em 0;
+    }
+
+    .card p {
+        font-size: 1rem;
+        color: #666;
+        padding: 0 1em 1em;
+    }
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+    footer p {
+        margin: 0;
+    }
+
+        footer p a {
+            color: #f8b400;
+            text-decoration: none;
+        }
+
+            footer p a:hover {
+                text-decoration: underline;
+            }
